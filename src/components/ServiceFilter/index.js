@@ -1,11 +1,15 @@
-import styled from 'styled-components';
+import React from 'react';
+import { ServiceFilterStyle, Label } from './styles';
+import IconFilter from '../IconFilter';
 
-export const ServiceFilter = styled.nav`
-  background-color: #3a4042;
-`;
+function ServiceFilter() {
+  return (
+    <ServiceFilterStyle>
+      <IconFilter />
 
-export const Label = styled.p`
-  font-family: 'Comfortaa', cursive;
-  color: #fffcee;
-  font-size: 20px;
-`;
+      <Label>Guia de serviços</Label>
+    </ServiceFilterStyle>
+  );
+}
+
+export default ServiceFilter;
