@@ -4,7 +4,7 @@ import IconSearch from '../IconSearch';
 
 const HeaderMain = styled.header`
   display: flex;
-  justify-content: space-between; /* x */
+  justify-content: space-between;
   background-color: #3c5268;
   padding: 16px 16px 28px;
 
