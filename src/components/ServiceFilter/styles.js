@@ -5,10 +5,10 @@ export const ServiceFilterStyle = styled.nav`
   display: flex;
   align-items: center;
   background-color: #3a4042;
-  padding: 8px 16px;
+  padding: 8px var(--gap-small);
 
   & > ${IconFilter} {
-    margin-right: 16px;
+    margin-right: var(--gap-small);
   }
 `;
 
