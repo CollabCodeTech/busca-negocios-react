@@ -1,5 +1,10 @@
+import React from 'react';
+import Styles from '../src/styles';
+import Reset from '../src/styles/generic/Reset';
+
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
+  layout: 'fullscreen',
   backgrounds: {
     default: 'dark',
     values: [
@@ -10,3 +15,13 @@ export const parameters = {
     ]
   }
 };
+
+export const decorators = [
+  Story => (
+    <>
+      <Styles />
+      <Reset />
+      <Story />
+    </>
+  )
+];
