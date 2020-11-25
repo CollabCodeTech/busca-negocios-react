@@ -13,7 +13,6 @@ const ButtonFixed = styled.button`
   border: none;
   color: #fffcee;
   box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Comfortaa', sans-serif;
 `;
 
 export default ButtonFixed;
