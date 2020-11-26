@@ -17,4 +17,4 @@ export const ThreeStars = () => <Stars amount="3" />;
 
 export const FourStars = () => <Stars amount="4" />;
 
-export const FifStars = () => <Stars amount="5" />;
+export const FiveStars = () => <Stars amount="5" />;
