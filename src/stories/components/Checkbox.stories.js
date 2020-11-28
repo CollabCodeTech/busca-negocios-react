@@ -9,4 +9,4 @@ export default {
   }
 };
 
-export const Default = () => <Checkbox id="example" />;
+export const Default = () => <Checkbox id="alimentacao" label="Alimentação" />;

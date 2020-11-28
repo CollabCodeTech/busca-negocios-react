@@ -1,11 +1,11 @@
 import React from 'react';
 import { Check, Content } from './styles';
 
-function Checkbox({ id }) {
+function Checkbox({ id, label }) {
   return (
     <>
       <Check id={id} />
-      <Content htmlFor={id}>Alimentação</Content>
+      <Content htmlFor={id}>{label}</Content>
     </>
   );
 }
