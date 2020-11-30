@@ -6,4 +6,4 @@ export default {
   component: MenuFilter
 };
 
-export const Default = () => <MenuFilter />;
+export const Default = () => <MenuFilter active={true} />;
