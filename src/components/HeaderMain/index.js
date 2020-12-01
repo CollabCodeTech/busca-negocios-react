@@ -1,16 +1,15 @@
-import styled from 'styled-components';
-import LogoMain from '../LogoMain';
+import React from 'react';
 import IconSearch from '../IconSearch';
+import LogoMain from '../LogoMain';
+import HeaderMainStyle from './styles';
 
-const HeaderMain = styled.header`
-  display: flex;
-  justify-content: space-between;
-  background-color: #3c5268;
-  padding: var(--gap-small) var(--gap-small) 28px;
-
-  & > ${LogoMain}, & > ${IconSearch} {
-    width: 24px;
-  }
-`;
+function HeaderMain() {
+  return (
+    <HeaderMainStyle>
+      <LogoMain />
+      <IconSearch />
+    </HeaderMainStyle>
+  );
+}
 
 export default HeaderMain;

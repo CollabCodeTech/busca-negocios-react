@@ -1,32 +1,16 @@
 import React from 'react';
-
-import HeaderMain from './components/HeaderMain';
-import LogoMain from './components/LogoMain';
-import IconSearch from './components/IconSearch';
-import ServiceFilter from './components/ServiceFilter';
-import ButtonFixed from './components/ButtonFixed';
-import CardService from './components/CardService';
-import Services from './components/Services';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Details from './pages/Details';
 
 function App() {
   return (
-    <>
-      <HeaderMain>
-        <LogoMain />
-        <IconSearch />
-      </HeaderMain>
-
-      <ServiceFilter />
-
-      <Services>
-        <CardService />
-        <CardService />
-        <CardService />
-        <CardService />
-      </Services>
-
-      <ButtonFixed>Insira o seu negócio</ButtonFixed>
-    </>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/details" component={Details} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
