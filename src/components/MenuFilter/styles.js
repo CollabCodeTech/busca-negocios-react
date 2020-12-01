@@ -8,6 +8,7 @@ const MenuFilterStyle = styled.menu`
     active ? 'translateX(0)' : 'translateX(-100%)'};
   left: 0;
   right: 0;
+  z-index: 100;
   background-color: #3a4042;
   padding: var(--gap-medium) var(--gap-smaller);
   transition: transform 200ms ease-in-out;
