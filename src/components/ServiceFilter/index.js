@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ServiceFilterStyle, Label } from './styles';
 import IconFilter from '../IconFilter';
+import MenuFilter from '../MenuFilter';
+import IconClose from '../IconClose';
 
 function ServiceFilter() {
-  return (
-    <ServiceFilterStyle>
-      <IconFilter />
+  const [activeMenu, setActiveMenu] = useState(false);
 
-      <Label>Guia de serviços</Label>
-    </ServiceFilterStyle>
+  const toggleMenu = () => {
+    setActiveMenu(old => !old);
+  };
+
+  return (
+    <>
+      <ServiceFilterStyle active={activeMenu} onClick={toggleMenu}>
+        <IconFilter />
+        <IconClose />
+
+        <Label>Guia de serviços</Label>
+      </ServiceFilterStyle>
+      <MenuFilter active={activeMenu} />
+    </>
   );
 }
 

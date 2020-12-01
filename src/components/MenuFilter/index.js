@@ -2,9 +2,9 @@ import React from 'react';
 import Checkbox from '../Checkbox';
 import MenuFilterStyle from './styles';
 
-function MenuFilter() {
+function MenuFilter({ active }) {
   return (
-    <MenuFilterStyle>
+    <MenuFilterStyle active={active}>
       <Checkbox id="alimentacao" label="Alimentção" />
       <Checkbox id="animais" label="Animais" />
       <Checkbox id="arteecultura" label="Arte e cultura" />
