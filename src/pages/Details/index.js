@@ -1,12 +1,12 @@
 import React from 'react';
+import BackAction from '../../components/BackAction';
 import HeaderMain from '../../components/HeaderMain';
-import IconArrow from '../../components/IconArrow';
 
 function Details() {
   return (
     <>
       <HeaderMain />
-      <IconArrow />
+      <BackAction />
     </>
   );
 }
