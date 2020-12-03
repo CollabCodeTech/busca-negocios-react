@@ -5,7 +5,6 @@ import IconSearch from '../IconSearch';
 const HeaderMainStyle = styled.header`
   display: flex;
   justify-content: space-between;
-  background-color: #3c5268;
   padding: var(--gap-small) var(--gap-small) 28px;
 
   & > ${LogoMain}, & > ${IconSearch} {
