@@ -8,6 +8,8 @@ const BackActionStyle = styled(Link)`
   color: #fffcee;
   font-size: 24px;
   text-decoration: none;
+  padding-left: 16px;
+  margin-bottom: 25px;
 
   & > ${IconArrow} {
     margin-right: 10px;
