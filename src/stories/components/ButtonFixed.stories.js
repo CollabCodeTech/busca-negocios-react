@@ -6,4 +6,9 @@ export default {
   component: ButtonFixed
 };
 
-export const Default = () => <ButtonFixed>Texto de exemplo</ButtonFixed>;
+const Template = args => <ButtonFixed {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  children: 'Enviar'
+};
