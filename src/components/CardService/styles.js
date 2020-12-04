@@ -9,10 +9,10 @@ export const Title = styled.h2`
 `;
 
 export const Caption = styled.figcaption`
+  display: ${({ active }) => (active ? 'flex' : 'none')};
   position: absolute;
   bottom: 2px;
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f25a70;
