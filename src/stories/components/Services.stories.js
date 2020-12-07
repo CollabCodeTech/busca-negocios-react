@@ -1,6 +1,5 @@
 import React from 'react';
 import Services from '../../components/Services';
-import CardService from '../../components/CardService';
 
 export default {
   title: 'Components/Services',
@@ -10,12 +9,30 @@ export default {
   }
 };
 
-export const Default = () => (
-  <Services>
-    <CardService />
-    <CardService />
-    <CardService />
-    <CardService />
-    <CardService />
-  </Services>
-);
+const servicesList = [
+  {
+    contentFeatured: 'Em destaque',
+    featured: true,
+    name: 'Cafeteria D’ Arte',
+    stars: 4
+  },
+  {
+    contentFeatured: 'Em destaque',
+    featured: false,
+    name: 'Café Maria',
+    stars: 5
+  },
+  {
+    contentFeatured: 'Em destaque',
+    featured: false,
+    name: 'Café Zé',
+    stars: 5
+  }
+];
+
+const Template = args => <Services {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  list: servicesList
+};
