@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BackAction from '../../components/BackAction';
 import HeaderMain from '../../components/HeaderMain';
 
@@ -8,8 +9,12 @@ function Details() {
   return (
     <>
       <HeaderMain />
-      <BackAction />
-      <WrapperBusiness />
+      <BackAction as={Link} content="Volar" />
+      <WrapperBusiness
+        stars={5}
+        title="Café Zé"
+        description="Café do Zé é feliz... é gostoso ... é do povo"
+      />
     </>
   );
 }
