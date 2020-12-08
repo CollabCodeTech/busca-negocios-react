@@ -9,12 +9,29 @@ export default {
   }
 };
 
-export const OneStar = () => <Stars amount="1" />;
+const Template = args => <Stars {...args} />;
 
-export const TwoStars = () => <Stars amount="2" />;
+export const OneStar = Template.bind({});
+OneStar.args = {
+  amount: 1
+};
 
-export const ThreeStars = () => <Stars amount="3" />;
+export const TwoStars = Template.bind({});
+TwoStars.args = {
+  amount: 2
+};
 
-export const FourStars = () => <Stars amount="4" />;
+export const ThreeStars = Template.bind({});
+ThreeStars.args = {
+  amount: 3
+};
 
-export const FiveStars = () => <Stars amount="5" />;
+export const FourStars = Template.bind({});
+FourStars.args = {
+  amount: 4
+};
+
+export const FiveStars = Template.bind({});
+FiveStars.args = {
+  amount: 5
+};

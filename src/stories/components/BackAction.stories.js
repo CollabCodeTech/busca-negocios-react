@@ -9,4 +9,9 @@ export default {
   }
 };
 
-export const Default = () => <BackAction as="a" />;
+const Template = args => <BackAction {...args} as="a" />;
+
+export const Default = Template.bind({});
+Default.args = {
+  content: 'Voltar'
+};
