@@ -10,6 +10,7 @@ const BackActionStyle = styled(Link)`
   text-decoration: none;
   padding-left: 16px;
   margin-bottom: 25px;
+  cursor: pointer;
 
   & > ${IconArrow} {
     margin-right: 10px;
