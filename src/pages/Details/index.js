@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import BackAction from '../../components/BackAction';
+import Day from '../../components/Day';
 import HeaderMain from '../../components/HeaderMain';
 import Title from '../../components/Title';
 
@@ -14,6 +15,13 @@ function Details() {
     history.goBack();
   };
 
+  const day = {
+    title: 'Segunda',
+    hours: [
+      { start: '09:00', end: '14:00' },
+      { start: '16:00', end: '22:00' }
+    ]
+  };
   return (
     <>
       <HeaderMain />
@@ -23,7 +31,9 @@ function Details() {
         title="Café Zé"
         description="Café do Zé é feliz... é gostoso ... é do povo"
       />
+
       <Title mantis={true}>Aberto agora</Title>
+      <Day {...day} />
     </>
   );
 }
