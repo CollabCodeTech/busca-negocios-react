@@ -13,5 +13,12 @@ const Template = args => <Title {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  children: 'Title feliz'
+  children: 'Title feliz',
+  mantis: false
+};
+
+export const Mantis = Template.bind({});
+Mantis.args = {
+  children: 'Title feliz Mantis',
+  mantis: true
 };
