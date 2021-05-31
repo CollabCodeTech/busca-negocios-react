@@ -17,5 +17,23 @@ Default.args = {
   hours: [
     { start: '09:00', end: '14:00' },
     { start: '16:00', end: '22:00' }
-  ]
+  ],
+  close: '',
+  noBorder: false
+};
+
+export const Close = Template.bind({});
+Close.args = {
+  title: 'Feriado',
+  hours: '',
+  close: 'Fechado',
+  noBorder: false
+};
+
+export const NoBorder = Template.bind({});
+NoBorder.args = {
+  title: 'Feriado',
+  hours: '',
+  close: 'Fechado',
+  noBorder: true
 };

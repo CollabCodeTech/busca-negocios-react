@@ -1,10 +1,9 @@
 import React from 'react';
-import { Wrapper, Title, Hours, Item } from './styles';
+import { Wrapper, Title, Hours, Item, Close } from './styles';
 
-function Day({ title, hours }) {
-  return (
-    <Wrapper>
-      <Title>{title}</Title>
+function Day({ title, hours, close, noBorder }) {
+  const hasHours = () =>
+    hours && (
       <Hours>
         {hours.map(({ start, end }) => (
           <Item>
@@ -12,6 +11,15 @@ function Day({ title, hours }) {
           </Item>
         ))}
       </Hours>
+    );
+
+  const hasClose = () => close && <Close>{close}</Close>;
+
+  return (
+    <Wrapper close={!!close} noBorder={!!noBorder}>
+      <Title>{title}</Title>
+      {hasHours()}
+      {hasClose()}
     </Wrapper>
   );
 }
