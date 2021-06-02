@@ -6,7 +6,7 @@ function Stars({ amount }) {
 
   useEffect(() => {
     setAmountStars(new Array(+amount).fill('x'));
-  }, []);
+  }, [amount]);
 
   return (
     <StarsStyle>
