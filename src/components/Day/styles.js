@@ -33,6 +33,7 @@ export const Wrapper = styled.article`
   min-width: 288px;
   justify-content: space-between;
   padding-bottom: 5px;
+  padding-top: 5px;
   color: ${({ close }) => (close ? '#C37472' : '#FFFCEE')};
 
   ${hasBorder};
