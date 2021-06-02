@@ -1,9 +1,7 @@
 import React from 'react';
-
 import HeaderMain from '../../components/HeaderMain';
 import ServiceFilter from '../../components/ServiceFilter';
 import ButtonFixed from '../../components/ButtonFixed';
-import CardService from '../../components/CardService';
 import Services from '../../components/Services';
 
 function Home() {
