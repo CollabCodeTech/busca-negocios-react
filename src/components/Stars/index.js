@@ -10,8 +10,8 @@ function Stars({ amount }) {
 
   return (
     <StarsStyle>
-      {amountStars.map(() => (
-        <Star>
+      {amountStars.map((content, key) => (
+        <Star key={key}>
           <Icon />
         </Star>
       ))}

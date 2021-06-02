@@ -6,7 +6,7 @@ function Services({ list }) {
   return (
     <ServicesStyles>
       {list.map(props => (
-        <CardService {...props} />
+        <CardService {...props} key={props.name} />
       ))}
     </ServicesStyles>
   );
