@@ -4,7 +4,6 @@ import BackAction from '../../components/BackAction';
 import HeaderMain from '../../components/HeaderMain';
 import Title from '../../components/Title';
 import Week from '../../components/Week';
-
 import WrapperBusiness from '../../components/WrapperBusiness';
 
 function Details() {
@@ -64,7 +63,6 @@ function Details() {
       close: '',
       noBorder: false
     },
-    ,
     {
       title: 'Domingo',
       hours: [
