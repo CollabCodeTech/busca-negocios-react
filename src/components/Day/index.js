@@ -5,8 +5,8 @@ function Day({ title, hours, close, noBorder }) {
   const hasHours = () =>
     hours && (
       <Hours>
-        {hours.map(({ start, end }) => (
-          <Item>
+        {hours.map(({ start, end }, key) => (
+          <Item key={key}>
             {start} - {end}
           </Item>
         ))}

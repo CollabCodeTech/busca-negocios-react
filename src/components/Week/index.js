@@ -6,7 +6,7 @@ function Week({ days }) {
   return (
     <WeekStyle>
       {days.map(day => (
-        <Day {...day} />
+        <Day {...day} key={day.title} />
       ))}
     </WeekStyle>
   );
